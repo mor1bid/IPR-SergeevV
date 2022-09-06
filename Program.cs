@@ -19,10 +19,12 @@ while (ent == true)
     else if (i==4) 
     {
         Console.WriteLine("");
-        Console.WriteLine("Продолжить?: 1/0");
-        int answ = Convert.ToInt32(Console.ReadLine());
-        if (answ==0) {ent = false;}
-        else if (answ==1) {i = 0; Console.WriteLine(""); Console.WriteLine("[");}
+        Console.WriteLine("Продолжить?: y/n");
+        string answ = Convert.ToString(Console.ReadLine());
+        string y = "y";
+        string n = "n";
+        if (answ==n) {ent = false;}
+        else if (answ==y) {i = 0; Console.WriteLine(""); Console.WriteLine("[");}
         else {Console.WriteLine("Введено некорректное значение. Повторите попытку.");}
     }
 }
