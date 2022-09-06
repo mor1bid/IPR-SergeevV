@@ -1,5 +1,5 @@
 ﻿int [] ar = new int [] {1111, 1, 11111, 111};
-//string [] ray = new string [] {hello, 1, 11111, 111};
+string [] ray = {"hello", "2", "world", ":-("};
 Console.Write("[");
 for(int i = 0; i<ar.Length; i++)
 {
@@ -10,6 +10,6 @@ for(int i = 0; i<ar.Length; i++)
         co++;
         num/=10;
     }
-    if (co<=3) { Console.Write(ar[i] + ", "); }
+    if (co<=3) { Console.Write(ray[i] + ", "); }
 }
 Console.Write("\b\b]");
