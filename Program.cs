@@ -3,8 +3,8 @@ int si = 999;
 int ze = 0;
 int ari = 0;
 string [] ar = new string [si];
-Console.WriteLine("Введите строку: ");
-Console.Write("[");
+Console.WriteLine("Введите 4 строки: ");
+Console.WriteLine("[");
 bool ent = true;
 while (ent == true) 
 {
@@ -16,11 +16,12 @@ while (ent == true)
     if (i==4) 
         {
             Console.WriteLine("\b\b]");
+            Console.WriteLine("");
             Console.WriteLine("Продолжить?: 1/0");
             int answ = Convert.ToInt32(Console.ReadLine());
             if (answ==0) { ent = false;}
             else if (answ==1) { i = 0; Console.WriteLine("[");}
-            else Console.WriteLine("Введено некорректное значение.");
+            else { Console.WriteLine("Введено некорректное значение."); return; }
         }
 }
 string [] ray = new string [ze];
