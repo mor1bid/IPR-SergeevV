@@ -34,7 +34,7 @@ for(i = 0; i<ze; i++)
 }
 //string [] ray = {"hello", "2", "world", ":-("};
 Console.WriteLine("");
-Console.Write("[");
+Console.Write("Строки, длина которых меньше/равна 3: [");
 for(i = 0; i<ray.Length; i++)
 {
     if (ray[i].Length<=3) { Console.Write(ray[i] + ", "); }
