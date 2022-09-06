@@ -10,7 +10,6 @@ while (ent == true)
 {
     string s = Convert.ToString(Console.ReadLine());
     ar[ari] = s;
-    //Console.Write(ar[i] + ", ");
     ari++;
     ze++;
     i++;
@@ -36,4 +35,4 @@ for(i = 0; i<ray.Length; i++)
 {
     if (ray[i].Length<=3) { Console.Write(ray[i] + ", "); }
 }
- Console.Write("\b\b]");
+Console.Write("\b\b]");
