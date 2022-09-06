@@ -8,22 +8,25 @@ Console.WriteLine("[");
 bool ent = true;
 while (ent == true) 
 {
-    string s = Convert.ToString(Console.ReadLine());
-    ar[ari] = s;
-    ari++;
-    ze++;
-    i++;
-    if (i==4) 
-        {
-            Console.WriteLine("\b\b]");
-            Console.WriteLine("");
-            Console.WriteLine("Продолжить?: 1/0");
-            int answ = Convert.ToInt32(Console.ReadLine());
-            if (answ==0) { ent = false;}
-            else if (answ==1) { i = 0; Console.WriteLine("[");}
-            else { Console.WriteLine("Введено некорректное значение."); return; }
-        }
+    if (i<4) 
+    {
+        string s = Convert.ToString(Console.ReadLine());
+        ar[ari] = s;
+        ari++;
+        ze++;
+        i++;
+    }
+    else if (i==4) 
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Продолжить?: 1/0");
+        int answ = Convert.ToInt32(Console.ReadLine());
+        if (answ==0) { ent = false;}
+        else if (answ==1) { i = 0; Console.WriteLine(""); Console.WriteLine("[");}
+        else { Console.WriteLine("Введено некорректное значение. Повторите попытку.");}
+    }
 }
+Console.WriteLine("\b\b]");
 string [] ray = new string [ze];
 for(i = 0; i<ze; i++)
 {
