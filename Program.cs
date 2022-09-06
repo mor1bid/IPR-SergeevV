@@ -21,9 +21,9 @@ while (ent == true)
         Console.WriteLine("");
         Console.WriteLine("Продолжить?: 1/0");
         int answ = Convert.ToInt32(Console.ReadLine());
-        if (answ==0) { ent = false;}
-        else if (answ==1) { i = 0; Console.WriteLine(""); Console.WriteLine("[");}
-        else { Console.WriteLine("Введено некорректное значение. Повторите попытку.");}
+        if (answ==0) {ent = false;}
+        else if (answ==1) {i = 0; Console.WriteLine(""); Console.WriteLine("[");}
+        else {Console.WriteLine("Введено некорректное значение. Повторите попытку.");}
     }
 }
 Console.WriteLine("\b\b]");
